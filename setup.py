@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fhand:
 setuptools.setup(
     name="kubernetes-nginx-deployer",
     version="0.0.1",
-    author="Jeevan Rao Talagan",
+    author="Jeevan Rao Talagana",
     author_email="jeevanrao.iiit@gmail.com",
     description=("knd (Kubernetes NGINX Deployer) deploys NGINX on a Kubernetes cluster, and verifies that it has come up healthy."
                 "A CLI progress bar is provided to indicate the deployment/scaling progress."
