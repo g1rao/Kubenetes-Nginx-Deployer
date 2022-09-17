@@ -44,7 +44,7 @@ INSTALLATION
 
     git clone https://github.com/g1rao/Kubenetes-Nginx-Deployer.git
     cd Kubenetes-Nginx-Deployer
-    pip3 install .
+    sudo pip3 install .
 
     
         jeevan@jeevan-mac ~ % mkdir Code
@@ -58,7 +58,7 @@ INSTALLATION
         Receiving objects: 100% (19/19), 18.43 KiB | 258.00 KiB/s, done.
         Resolving deltas: 100% (2/2), done.
         jeevan@jeevan-mac Code % cd Kubenetes-Nginx-Deployer
-        jeevan@jeevan-mac Kubenetes-Nginx-Deployer % pip3 install .
+        jeevan@jeevan-mac Kubenetes-Nginx-Deployer % sudo pip3 install .
         Processing /Users/jeevan/Code/Kubenetes-Nginx-Deployer
         Installing build dependencies ... done
         Getting requirements to build wheel ... done
@@ -95,3 +95,10 @@ INSTALLATION
         Successfully built kubernetes-nginx-deployer
         Installing collected packages: kubernetes-nginx-deployer
         Successfully installed kubernetes-nginx-deployer-0.0.1
+
+
+MAN Page Generation
+    pandoc README.md -s -t man -o knd.1
+    # add path /usr/local/man/ to manpath if it doesn't exists
+    MANPATH=/usr/local/man/:$MANPATH; export MANPATH
+    man knd

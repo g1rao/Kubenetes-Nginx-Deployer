@@ -30,5 +30,6 @@ setuptools.setup(
         "console_scripts": [
             "knd = knd.knd_cli:main",
         ]
-    }
+    },
+   data_files = [('man/man1', ['docs/knd.1'])],
 )
