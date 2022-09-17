@@ -97,8 +97,9 @@ INSTALLATION
         Successfully installed kubernetes-nginx-deployer-0.0.1
 
 
-MAN Page Generation
-    pandoc README.md -s -t man -o knd.1
-    # add path /usr/local/man/ to manpath if it doesn't exists
-    MANPATH=/usr/local/man/:$MANPATH; export MANPATH
-    man knd
+MANPAGE
+        
+        add path /usr/local/man/ to manpath if it doesn't exists
+        
+        MANPATH=/usr/local/man/:$MANPATH; export MANPATH
+        man knd
