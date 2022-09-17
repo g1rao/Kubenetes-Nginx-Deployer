@@ -103,3 +103,13 @@ MANPAGE
         
         MANPATH=/usr/local/man/:$MANPATH; export MANPATH
         man knd
+
+HOW TO RUN
+        
+        knd --help
+        knd --list-deployments
+        knd --nginx-version latest --replicas 4 nginx-deployment 
+        knd --nginx-version latest --replicas 5  nginx-deployment
+        knd --nginx-version 1.15.4  --replicas 4 nginx-deployment
+        knd --nginx-version 1.15.4  --replicas 3 nginx-deployment
+        knd --nginx-version latest --replicas 4 nginx-deployment --force
